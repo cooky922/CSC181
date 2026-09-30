@@ -9,10 +9,10 @@
 ## 1. User group
 
 **Who are you designing for?**
-Visitors and Iligan residents who live far from the Diyandi Festival Park, known as Mugna.
+Visitors and Iligan residents who live far (e.g. from Buruun) from the Diyandi Festival Park, known as Mugna.
 
 **Why might this group need support during Diyandi?**
-They cannot easily check the venue themselves or doesn't have any immediate news about the venue conditions before leaving home and they know that a wasted trip just costs them time and money.
+They cannot easily check the venue themselves, and they rarely get immediate news about its conditions before leaving home. They know that a wasted trip costs them time and money.
 
 ---
 
@@ -93,7 +93,7 @@ None.
 
 Select **one** option below and complete the applicable details.
 
-- [/] **No AI tools used.** I did not use any generative AI tool in preparing this submission.
+- [x] **No AI tools used.** I did not use any generative AI tool in preparing this submission.
 
 - [ ] **AI tools used.** I used the following AI tool(s): [Write tool name(s), e.g., ChatGPT, Gemini, Copilot].
 
