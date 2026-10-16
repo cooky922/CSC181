@@ -81,8 +81,6 @@ The system will be a mobile-friendly web app used while planning or doing their 
 
 ### In-scope capabilities
 
-[Describe 3–5 specific capabilities as actions users can perform.]
-
 1. Search for prices of food or daily-necessity items — such as rice, eggs, fish, meat and soap — and see its prices across different stores and vendors.
 2. Submit a new price or update an outdated one, including the item, store, price, and date.
 3. Filter or sort search results by price, store type (public market, grocery, sari-sari stores), or location.
@@ -171,7 +169,7 @@ Abreo, N. A., Kouba, A., Sy, E. Y., Yeo, D. C. J., Vallejo, B. M., Tanalgo, K. C
 
 Select one option:
 
-- [/] No generative AI tools were used by any member in preparing this submission.
+- [x] No generative AI tools were used by any member in preparing this submission.
 - [ ] One or more members used generative AI tools. Details are provided below.
 
 Not applicable.
@@ -199,17 +197,17 @@ upload the same Markdown file to their personal CSC181 repository.
 
 ## Submission Checklist
 
-- [/] Each member contributed at least two problem ideas.
-- [/] Three candidate problems were compared.
-- [/] The selection rationale is included.
-- [/] The problem statement contains 100–150 words.
-- [/] The proposed solution is included.
-- [/] Relevant stakeholders and consultation questions are identified.
-- [/] The scope contains 3–5 capabilities and at least three exclusions.
-- [/] Constraints, assumptions, and success indicators are included.
-- [/] A review change and three unanswered questions are documented.
-- [/] Contributions, references, and AI use are declared.
-- [/] All members reviewed the same final document.
-- [/] Each member saved the file as `activities/project-proposal.md`.
-- [/] Each member committed and pushed their copy to their personal repository.
-- [/] Each member submitted their own GitHub file link through MOLE.
+- [x] Each member contributed at least two problem ideas.
+- [x] Three candidate problems were compared.
+- [x] The selection rationale is included.
+- [x] The problem statement contains 100–150 words.
+- [x] The proposed solution is included.
+- [x] Relevant stakeholders and consultation questions are identified.
+- [x] The scope contains 3–5 capabilities and at least three exclusions.
+- [x] Constraints, assumptions, and success indicators are included.
+- [x] A review change and three unanswered questions are documented.
+- [x] Contributions, references, and AI use are declared.
+- [x] All members reviewed the same final document.
+- [x] Each member saved the file as `activities/project-proposal.md`.
+- [x] Each member committed and pushed their copy to their personal repository.
+- [x] Each member submitted their own GitHub file link through MOLE.
