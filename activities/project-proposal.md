@@ -44,7 +44,7 @@ People with limited budget struggle to find affordable food or daily necessities
 
 ### Selection rationale
 
-We chose the problem of people with limited budgets struggling to afford food and daily necessities because it affects most of the people, especially students who have limited budgets. Additionally, the primary stakeholders are easy to reach, since we can inquire with students on campus. It’s also manageable for our team, since the app mostly needs a price database and a simple search feature, which we can finish within the semester. The printing problem was not selected because it depends on vendors being willing to adopt a new process, which we can’t control. The faculty forms problem was not selected because staff may not be comfortable with a new digital system, and it would need cooperation from several offices.
+We chose the problem of people with limited budgets struggling to afford food and daily necessities because it affects most of the people, especially students who have limited budgets. Additionally, the primary stakeholders are easy to reach, since we can inquire with students on campus. It’s also manageable for our team since the app mostly needs a price database and a simple search feature, which we can finish within the semester. The printing problem was not selected because it depends on vendors being willing to adopt a new process, which we can’t control. The faculty forms problem was not selected because staff may not be comfortable with a new digital system, and it would need cooperation from several offices.
 
 ## 3. Preliminary Project Proposal
 
@@ -54,7 +54,7 @@ We chose the problem of people with limited budgets struggling to afford food an
 
 ### Problem statement
 
-Individuals with limited budgets, often struggle to manage their spending on affordable food and daily necessities. Due to prices varying across different stores and vendors, there is no easy way to compare them unless they do it manually for every store in that area. At the moment, they can only ask their friends, ask social media or visit several stores to check the prices, which, as a result, can cost time and transportation money. This can make budgeting hard, and people may overspend their money by shopping too much. The goal is a quick, convenient way to compare prices and plan food spending. We assume that prices differ enough to make comparison worthwhile, that vendors and shoppers are willing to share price information, and that people would actually use an app for this.
+Students with limited budgets often struggle to manage their spending on affordable food and daily necessities. Due to prices varying across different stores and vendors, there is no easy way to compare them unless they do it manually for every store in that area. At the moment, they can only ask their friends, ask social media or visit several stores to check the prices, which, as a result, can cost time and transportation money. This can make budgeting hard, and people may overspend their money by shopping too much. The goal is a quick, convenient way to compare prices and plan food spending. We assume that prices differ enough to make comparison worthwhile, that vendors and shoppers are willing to share price information, and that people would actually use an app for this.
 
 ### Proposed solution
 
@@ -64,27 +64,37 @@ Our proposed solution will be a mobile-friendly web app that would let users sea
 
 | Stakeholder role/group | Relationship to the project | Likely need or concern | Question to ask | Possible consultation method |
 | ------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Individuals with limited budgets | Primary users who search, compare, and also submit prices. | Quickly finding the cheapest place to buy food and necessities without having to walk around to compare. | How do you decide where to buy food, and how much time or money do you spend comparing prices? | Short surveys through Google Forms and informal interviews. |
-| Public market vendors | Source of the price data and the ones being compared. | Not wanting their prices shown publicly. | How often do your prices change, and what factors commonly cause your prices to change? | Short in-person interviews |
+| Students with limited budgets | Primary users who search, compare, and also submit prices. | Quickly finding the cheapest place to buy food and necessities without having to walk around to compare. | How do you decide where to buy food, and how much time or money do you spend comparing prices? | Short surveys through Google Forms and informal interviews. |
 | Small local vendors and neighborhood stores | Provide price information for goods sold outside public markets. | Fear of losing customers to cheaper vendors. | Would you be comfortable having your prices listed, and how often do your prices change? | Short in-person interviews |
-| Grocery and supermarket representatives | Another source of price data. | Concern about the accuracy of listed prices and how the app might affect sales. | Would you object to us recording your posted shelf prices and how often they’re updated? | Short in-person interviews / short surveys |
 
-Stakeholder-count explanation, if needed: Not applicable.
+Stakeholder-count explanation, if needed: We identified two stakeholder groups because the app has only two direct roles: students with limited budgets, who search, compare, and submit prices, and small local vendors and neighborhood stores, whose prices are listed and compared. We limited the vendor scope to stores within the vicinity of MSU-IIT, near and within walking distance only, since students who buy daily essentials around campus mostly shop at nearby stores. Because of this, we did not include other groups such as large supermarkets, or public markets. They are outside the area the app covers, and the app does not depend on their approval or participation These two groups are enough to answer our main unanswered questions: whether vendors are comfortable having their prices listed, and whether students would use and contribute to the app. We will add more stakeholder groups only if the scope grows beyond the campus vicinity.
 
 ## 5. Initial Scope
 
 ### Intended users and setting
 
-The system will be a mobile-friendly web app used while planning or doing their shopping. The system will serve two user groups in Iligan City: 
-- People in Iligan with limited budgets, who buy food and daily necessities from public markets, grocery stores, and local vendors in the city. 
-- Vendors, including from the public market, local store, and grocery stores, who maintain their store profiles, product list, and their prices.
+The system will be a mobile-friendly web app used while planning or doing their shopping. The system will serve two user groups within the vicinity of MSU-IIT: 
+- Undergraduate students from MSU-IIT with limited budgets, who buy food and daily necessities from local vendors.
+- Vendors from the local stores, who maintain their store profiles, product list, and their prices.
 
 ### In-scope capabilities
 
-1. Search for prices of food or daily-necessity items — such as rice, eggs, fish, meat and soap — and see its prices across different stores and vendors.
+1. Search for prices of food or daily-necessity items and see its prices across different stores and vendors.
 2. Submit a new price or update an outdated one, including the item, store, price, and date.
-3. Filter or sort search results by price, store type (public market, grocery, sari-sari stores), or location.
+3. Filter or sort search results by price or location.
 4. Make a shopping list and the app will suggest which store gives the lowest total cost.
+
+After conducting several interviews with our chosen stakeholders (students with limited budgets and neighborhood stores), we selected 10 items that will be displayed on the app to narrow down the scope and feasability of our app. Below are the items that we selected:
+
+1. Shampoo sachets
+2. Canned Goods
+3. Eggs
+4. Rice
+5. Cooked Meal
+6. Watter bottle/gallon
+7. Coffee sachets
+8. Milk
+9. Bath Soap
 
 ### Out-of-scope capabilities
 
@@ -129,21 +139,27 @@ The system will be a mobile-friendly web app used while planning or doing their 
 
 - Before review:
   - The scope was initially broader as it covered all people who are on a tight budget.
-  - We initially considered an optimized recommendation system that would choose items based on price, brand, quality and location
+  - The vendor coverage was open to public markets, grocery stores, and local vendors across the city.
+  - The app was not limited to a specific set of items.
+  - We initially considered an optimized recommendation system that would choose items based on price, brand, quality and location.
 - After review:
-  - The scope was narrowed down to just people in Iligan City with tight budget
-  - The recommendation system is simplified to a budget-based recommendation system
+  - The scope was narrowed down to the vicinity of MSU-IIT, meaning the area around the campus within walking distance. The two stakeholder groups are undergraduate students from MSU-IIT with tight budgets and local vendors from sari-sari stores in that area.
+  - The app will list up to 10 items for now. The current list is tentative and only serves as a starting point. It is based on the items most often mentioned in our student and vendor interviews, and it may change as we gather more data.
+  - The recommendation system is simplified to a budget-based recommendation system.
   - We added data validation and verification as a deliverable.
-  - “Accuracy of user-submitted prices” also became a success indicator.
+  - "Accuracy of user-submitted prices" also became a success indicator.
 - Reason:
   - The app is only useful if its prices are accurate.
-  - Narrowing the scope to Iligan City residents with tight budgets is more feasible since we can easily reach them for data gathering
-  - Adding data validation and verification makes the price information more accurate and trustworthy
-
+  - Limiting the scope to the area around the campus and to sari-sari stores is more feasible since we can easily reach students and nearby vendors for interviews and data gathering.
+  - Limiting the app to 10 items keeps the manual price collection manageable for a small team with limited time. Prices at small vendors change often, so tracking fewer items makes it easier to keep the data current and to check its accuracy.
+  - Because the list is tentative, we can swap items based on what students and vendors actually buy most, without redesigning the app.
+  - Adding data validation and verification makes the price information more accurate and trustworthy.
 
 ### Biggest remaining risk
 
 Data used by the app is dependent on how many people actually contribute to the posting of prices. If few people contribute, the data becomes sparse or outdated, and the price comparison loses its value, since prices at small vendors change often and we can’t collect them automatically.
+
+Another risk to note is that students may stop using the app once they already know which stores to go to. Within the vicinity of MSU-IIT, many students are already familiar with the nearby stores and have a routine, so they may see little reason to check prices before buying. Some of the students we interviewed said they prefer the closest store or buy everything in one store for convenience.
 
 ### Three unanswered questions
 
@@ -156,7 +172,7 @@ Data used by the app is dependent on how many people actually contribute to the 
 
 | Member | Ideas or analysis contributed | Drafting or review contribution |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
-| Desmond | - Helped identify different stakeholders.<br>- Suggested a budget-based recommendation system with a given item list and budget. | - Started drafting number 4.<br>- Helped draft numbers 2, 3, 4, and 5.<br>- Reviewed the final output. |
+| Desmond | - Helped identify different stakeholders.<br>- Suggested a budget-based recommendation system with a given item list and budget. | - Started drafting number 4.<br>- Helped draft numbers 2, 3, 4, and 5.<br>- Reviewed the final output.<br>- Drafted interview log |
 | Vince | - Helped narrow down the top three problems to choose from by sharing thoughts on the pros and cons of each.<br>- Shared thoughts on potential problems or flaws in the proposed solution. | - Drafted number 5.<br>- Helped modify and improve number 3.<br>- Reviewed the final output. |
 | Pauline | - Proposed the boarding house and flooded streets problems. | - Drafted numbers 2 and 3.<br>- Reviewed the final output. |
 | Sam | - Proposed the jeepney route problem based on the Diyandi activity and the streamlined faculty and staff form submission problem. | - Drafted numbers 2, 4, and 5.<br>- Proofread the document.<br>- Reviewed the final output. |
