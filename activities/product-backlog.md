@@ -168,9 +168,7 @@ Then Store A is shown with "Only one store has a price" and no "Lowest" label or
 **Acceptance criteria:**
 
 - [ ] Each store in the results shows its walking time from campus in minutes and estimated distance in meters.
-
 - [ ] The student can filter by walking distance, and only stores at or under the chosen limit are shown.
-
 - [ ] (unhappy) If no store within the chosen limit has a price for the item, the app shows "No stores within \[distance\] m / km have prices for \[item\]" and offers the next limit.
 
 ### US-04: Last-updated date
@@ -178,9 +176,7 @@ Then Store A is shown with "Only one store has a price" and no "Lowest" label or
 **Acceptance criteria:**
 
 - [ ] Each price shows the date it was last updated, for example "Nov 11, 2026".
-
 - [ ] A price not updated in the last 14 days is labelled "Outdated".
-
 - [ ] (unhappy) A price record with no date shows "Date unknown" instead of a blank.
 
 ### US-05: Browse supported items
@@ -188,9 +184,7 @@ Then Store A is shown with "Only one store has a price" and no "Lowest" label or
 **Acceptance criteria:**
 
 - [ ] The home screen lists atleast 10 items by name.
-
 - [ ] Selecting an item opens the same results as searching its name.
-
 - [ ] (unhappy) An item with no price records is still listed and opens "No prices yet for \[item\]".
 
 ### US-06: Build an item basket
@@ -198,11 +192,8 @@ Then Store A is shown with "Only one store has a price" and no "Lowest" label or
 **Acceptance criteria:**
 
 - [ ] A student can add any of the 10 supported items to the list with a whole-number quantity from 1 to 99\.
-
 - [ ] A student can remove an item, and the list updates within ms.
-
 - [ ] (unhappy) Adding an item already on the list shows "Already on your list" and does not add a second row.
-
 - [ ] (unhappy) A quantity of 0, a negative number, a decimal, or a blank is rejected with "Enter a quantity from 1 to 99".
 
 **Scenario 1: Normal case**
@@ -222,13 +213,9 @@ Then the app shows "Already on your list" and the list still has one eggs row
 **Acceptance criteria:**
 
 - [ ] A student can enter a budget as a whole number of pesos from ₱1 to ₱10,000.
-
 - [ ] The app shows the list total, using the lowest known price for each item, and the amount remaining or over budget.
-
 - [ ] The total updates when an item or quantity changes.
-
 - [ ] (unhappy) A budget that is blank, zero, negative, or not a number is rejected with "Enter a budget in pesos".
-
 - [ ] (unhappy) If a listed item has no price, the app leaves it out of the total and shows "No price for \[item\], not included in total".
 
 **Scenario 1: Within budget**
@@ -248,11 +235,8 @@ Then the app shows a total of ₱108 and "₱8 over budget"
 **Acceptance criteria:**
 
 - [ ] The app ranks the stores that have a price for each item on the list, from lowest to highest total.
-
 - [ ] Each ranked store shows its total and either "Within budget" or "Over by ₱\[amount\]".
-
 - [ ] Stores missing a price for any list item are shown in a separate "Missing items" section with the names of the missing items, and are not ranked.
-
 - [ ] (unhappy) If no store has a price for each list item, the app shows "No single store has every item on your list" and still lists each store with its missing items.
 
 **Scenario 1: Normal case**
@@ -277,9 +261,7 @@ Then Store A shows ₱114 (Over by ₱14) and Store B shows ₱115 (Over by ₱1
 **Acceptance criteria:**
 
 - [ ] Each ranked store shows its walking time from campus beside its total.
-
 - [ ] The student can sort ranked stores by total or by walking time.
-
 - [ ] (unhappy) A store with no walking time recorded shows "Distance not set" and is placed last when sorted by walking time.
 
 ### US-10: Vendor adds an item's price
@@ -287,17 +269,11 @@ Then Store A shows ₱114 (Over by ₱14) and Store B shows ₱115 (Over by ₱1
 **Acceptance criteria:**
 
 - [ ] A signed-in vendor can add a price for one of the 10 supported items to their own store.
-
 - [ ] The price must be a number greater than ₱0 and at most ₱9,999.99, with at most 2 decimal places.
-
 - [ ] The app records today's date with the price, and the store appears in that item's results.
-
 - [ ] (unhappy) A price that is blank, zero, negative, or not a number is rejected with "Enter a price greater than ₱0" and nothing is saved.
-
 - [ ] (unhappy) An item already priced at the store is rejected with "Already listed. Update the price instead" and no second row is added.
-
 - [ ] (unhappy) A student account, or a user who is not signed in as a vendor, is blocked from the add-price form with "Only store vendors can post prices".
-
 - [ ] (unhappy) A price that differs by more than 50% from the median price of that item across stores asks "This price is far from other stores. Confirm?" and is saved only if the vendor confirms.
 
 **Scenario 1: Normal case**
@@ -317,15 +293,10 @@ Then the app shows "Only store vendors can post prices" and no form is shown
 **Acceptance criteria:**
 
 - [ ] In 5 test runs on a mobile phone, each price update takes 30 seconds or less, measured from opening the update form to the saved confirmation.
-
 - [ ] Each tap or input on the update form gets a visible response within 1 second on a mobile phone.
-
 - [ ] Saving an update changes only that item's price and date, and the results show the new price with today's date.
-
 - [ ] (unhappy) A price that is blank, zero, negative, or not a number is rejected with "Enter a price greater than ₱0", and the old price stays.
-
 - [ ] (unhappy) If the save fails because there is no connection, the app shows "Not saved. Check your connection and try again", and the old price stays.
-
 - [ ] (unhappy) A vendor who tries to edit another store's price is blocked with "You can only edit your own store".
 
 **Scenario 1: Normal case**
@@ -345,13 +316,9 @@ Then the app shows "Not saved. Check your connection and try again", and eggs re
 **Acceptance criteria:**
 
 - [ ] A vendor can create a profile with a store name (2 to 50 characters), and store’s location..
-
 - [ ] After saving, the store name, landmark, and walking time are shown with each price the store posts.
-
 - [ ] (unhappy) A missing required field is rejected with an error that names the field.
-
 - [ ] (unhappy) A walking time of 0, a negative number, a decimal, or more than 60 is rejected with "Enter a walking time from 1 to 60 minutes".
-
 - [ ] (unhappy) A store with the same name and landmark as an existing store is rejected with "Store already exists".
 
 **Scenario 1: Normal case**
@@ -371,11 +338,8 @@ Then the app shows "Store already exists" and no profile is saved
 **Acceptance criteria:**
 
 - [ ] A vendor can remove an item from their own store after confirming "Remove \[item\] from \[store\]?".
-
 - [ ] After removal, the next search for that item no longer lists the store.
-
 - [ ] (unhappy) If the vendor cancels the confirmation, the item and its price stay.
-
 - [ ] (unhappy) A vendor who tries to remove an item from another store is blocked with "You can only edit your own store".
 
 ## 5. Quality Requirements and Constraints (EARS)
@@ -481,9 +445,8 @@ Gaps found: None
 
 | Problem found | Story or requirement | How we fixed it |
 | --- | --- | --- |
-| *E-Estimable 
-Needs to clarify how nearby stores are Identified* | *US-01* | *Defined the nearby store. A store is considered nearby if it is approximately less than a kilometer away from the user’s location* |
-| *Dependent on US-10* | *US-02* | *We addressed this dependency during sprint planning by ensuring that the vendor price-entry functionality (US-10) is implemented alongside US-02 and that the database is seeded with appropriate product and price data.* |
+| E-Estimable: Needs to clarify how nearby stores are Identified | US-01 | Defined the nearby store. A store is considered nearby if it is approximately less than a kilometer away from the user’s location |
+| Dependent on US-10 | US-02 | We addressed this dependency during sprint planning by ensuring that the vendor price-entry functionality (US-10) is implemented alongside US-02 and that the database is seeded with appropriate product and price data. |
 
 ### Stakeholder walk-through
 
